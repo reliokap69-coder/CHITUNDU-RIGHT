@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Right "David" Chitundu | Tech Entrepreneur</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles & Dark Theme */
+        :root {
+            --bg-color: #0d1117;
+            --text-main: #c9d1d9;
+            --text-heading: #ffffff;
+            --accent-color: #58a6ff;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--accent-color);
+            transition: opacity 0.2s;
+        }
+
+        a:hover {
+            opacity: 0.8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        #hero {
+            padding: 100px 0 50px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            color: var(--text-heading);
+            margin: 0 0 10px;
+            font-weight: 800;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin: 0 0 15px;
+            font-weight: 600;
+        }
+
+        .hero-location {
+            font-size: 1rem;
+            color: #8b949e;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--text-heading);
+            color: var(--bg-color);
+            border-radius: 6px;
+            font-weight: 600;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--text-heading);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn:hover, .btn-outline:hover {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            border-color: var(--accent-color);
+            opacity: 1;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--text-heading);
+            margin-bottom: 30px;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            max-width: 800px;
+        }
+
+        /* Projects Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 25px;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--text-heading);
+            font-size: 1.4rem;
+        }
+
+        /* Skills Tags */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .social-links a {
+            margin: 0 15px;
+            font-size: 1.1rem;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            .hero-title { font-size: 2.2rem; }
+            .hero-subtitle { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section id="hero">
+            <h1 class="hero-title">Right "David" Chitundu</h1>
+            <h2 class="hero-subtitle">Tech Entrepreneur, App Developer & Visionary</h2>
+            <p class="hero-location">📍 Ndola, Zambia</p>
+            <a href="#projects" class="btn">View My Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p class="about-text">
+                I am a technology entrepreneur and developer based in Ndola, focused on building scalable digital platforms, fintech solutions, and centralized marketplaces. I specialize in turning complex ideas into functional, high-impact applications designed to reach millions of users. My ultimate goal is to leverage technology and real estate to build generational wealth and transform the digital landscape in Africa.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="grid">
+                <!-- Success Academy -->
+                <div class="card">
+                    <h3>Success Academy</h3>
+                    <p>A gamified financial literacy and success education platform. Features a custom XP system and a comprehensive database designed to build a "Rich Mindset" through interactive learning.</p>
+                </div>
+                <!-- Echo AI -->
+                <div class="card">
+                    <h3>Echo AI</h3>
+                    <p>A dedicated social platform and monetization hub for Zambian musicians. Engineered to help artists distribute music, share videos, and generate revenue through ad-supported models and Mobile Money (MoMo) integration.</p>
+                </div>
+                <!-- CarFinder -->
+                <div class="card">
+                    <h3>CarFinder (Auto Tour)</h3>
+                    <p>A centralized digital marketplace streamlining vehicle sales in Zambia, featuring verified seller badges and high-quality video tours.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section id="skills">
+            <h2>Tech Stack & Skills</h2>
+            <div class="skills-container">
+                <span class="skill-tag">Kotlin</span>
+                <span class="skill-tag">Android Studio</span>
+                <span class="skill-tag">FlutterFlow</span>
+                <span class="skill-tag">Supabase</span>
+                <span class="skill-tag">Firebase</span>
+                <span class="skill-tag">Google AI Studio</span>
+                <span class="skill-tag">GitHub Copilot</span>
+                <span class="skill-tag">Replit</span>
+                <span class="skill-tag">Shopify</span>
+                <span class="skill-tag">RouteNote / DistroKid</span>
+            </div>
+        </section>
+
+        <!-- Footer / Contact -->
+        <footer id="contact">
+            <h2 style="margin-bottom: 20px;">Let's Connect</h2>
+            <div class="social-links">
+                <a href="mailto:your.email@gmail.com">Email</a>
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+            </div>
+            <p style="margin-top: 30px; font-size: 0.8rem; color: #8b949e;">
+                &copy; 2026 Right Chitundu. All rights reserved.
+            </p>
+        </footer>
+    </div>
+
+</body>
+  </html>
+              
